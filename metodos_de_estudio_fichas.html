@@ -1,0 +1,194 @@
+
+<style>
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; padding: 1rem 0; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+  .card-header { padding: 14px 16px 10px; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; margin-bottom: 8px; }
+  .card-title { font-size: 16px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 3px; }
+  .card-sub { font-size: 13px; color: var(--color-text-secondary); margin: 0; }
+  .card-body { padding: 12px 16px 14px; }
+  .row { display: flex; gap: 8px; margin-bottom: 8px; align-items: flex-start; }
+  .label { font-size: 11px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.04em; min-width: 80px; padding-top: 2px; }
+  .value { font-size: 13px; color: var(--color-text-primary); line-height: 1.5; }
+  .steps { margin: 0; padding: 0; list-style: none; }
+  .steps li { display: flex; gap: 8px; font-size: 13px; color: var(--color-text-primary); line-height: 1.5; margin-bottom: 5px; }
+  .step-num { background: var(--color-background-secondary); border-radius: 50%; width: 20px; height: 20px; min-width: 20px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; color: var(--color-text-secondary); }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 10px 0; }
+  .tip { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 8px 12px; font-size: 12px; color: var(--color-text-secondary); display: flex; gap: 6px; align-items: flex-start; }
+
+  .purple-badge { background: #EEEDFE; color: #3C3489; }
+  .teal-badge { background: #E1F5EE; color: #085041; }
+  .coral-badge { background: #FAECE7; color: #712B13; }
+  .blue-badge { background: #E6F1FB; color: #0C447C; }
+  .amber-badge { background: #FAEEDA; color: #633806; }
+  .green-badge { background: #EAF3DE; color: #27500A; }
+  .pink-badge { background: #FBEAF0; color: #72243E; }
+</style>
+
+<h2 class="sr-only">Fichas de métodos de estudio: Pomodoro, Cornell, SQ3R, Feynman, Mapas mentales, Flashcards y Revisión espaciada</h2>
+
+<div class="grid">
+
+  <!-- POMODORO -->
+  <div class="card">
+    <div class="card-header">
+      <div class="badge coral-badge"><i class="ti ti-clock" aria-hidden="true"></i> Gestión del tiempo</div>
+      <p class="card-title">Técnica Pomodoro</p>
+      <p class="card-sub">Trabaja en bloques cortos con descansos regulares</p>
+    </div>
+    <div class="card-body">
+      <div class="row"><span class="label">Ideal para</span><span class="value">Tareas largas, procrastinación</span></div>
+      <div class="row"><span class="label">Duración</span><span class="value">25 min trabajo + 5 min descanso</span></div>
+      <hr class="divider">
+      <p style="font-size:12px; font-weight:500; color:var(--color-text-secondary); margin:0 0 7px;">Pasos</p>
+      <ol class="steps">
+        <li><span class="step-num">1</span>Elige una tarea concreta a realizar</li>
+        <li><span class="step-num">2</span>Pon un temporizador en 25 minutos</li>
+        <li><span class="step-num">3</span>Trabaja sin interrupciones hasta que suene</li>
+        <li><span class="step-num">4</span>Descansa 5 min; cada 4 pomodoros, 20-30 min</li>
+      </ol>
+      <hr class="divider">
+      <div class="tip"><i class="ti ti-bulb" aria-hidden="true" style="font-size:14px; margin-top:1px;"></i> Apaga el celular durante el bloque. Cada interrupción reinicia el ciclo.</div>
+    </div>
+  </div>
+
+  <!-- CORNELL -->
+  <div class="card">
+    <div class="card-header">
+      <div class="badge purple-badge"><i class="ti ti-notes" aria-hidden="true"></i> Toma de apuntes</div>
+      <p class="card-title">Método Cornell</p>
+      <p class="card-sub">Sistema estructurado de apuntes y repaso</p>
+    </div>
+    <div class="card-body">
+      <div class="row"><span class="label">Ideal para</span><span class="value">Clases, lecturas, conferencias</span></div>
+      <div class="row"><span class="label">Materiales</span><span class="value">Cuaderno dividido en 3 secciones</span></div>
+      <hr class="divider">
+      <p style="font-size:12px; font-weight:500; color:var(--color-text-secondary); margin:0 0 7px;">Estructura de la hoja</p>
+      <ol class="steps">
+        <li><span class="step-num">1</span><strong style="font-weight:500;">Columna derecha (70%)</strong> — apuntes principales</li>
+        <li><span class="step-num">2</span><strong style="font-weight:500;">Columna izquierda (30%)</strong> — preguntas clave</li>
+        <li><span class="step-num">3</span><strong style="font-weight:500;">Banda inferior</strong> — resumen con tus propias palabras</li>
+        <li><span class="step-num">4</span>Repasa cubriendo la columna derecha y responde</li>
+      </ol>
+      <hr class="divider">
+      <div class="tip"><i class="ti ti-bulb" aria-hidden="true" style="font-size:14px; margin-top:1px;"></i> El resumen se escribe justo después de clase, no días después.</div>
+    </div>
+  </div>
+
+  <!-- SQ3R -->
+  <div class="card">
+    <div class="card-header">
+      <div class="badge blue-badge"><i class="ti ti-book" aria-hidden="true"></i> Lectura activa</div>
+      <p class="card-title">Método SQ3R</p>
+      <p class="card-sub">Lectura comprensiva en cinco fases</p>
+    </div>
+    <div class="card-body">
+      <div class="row"><span class="label">Ideal para</span><span class="value">Libros de texto, capítulos densos</span></div>
+      <div class="row"><span class="label">Enfoque</span><span class="value">Comprensión profunda del contenido</span></div>
+      <hr class="divider">
+      <p style="font-size:12px; font-weight:500; color:var(--color-text-secondary); margin:0 0 7px;">Las 5 fases</p>
+      <ol class="steps">
+        <li><span class="step-num">S</span><strong style="font-weight:500;">Survey</strong> — ojea títulos, imágenes y resúmenes</li>
+        <li><span class="step-num">Q</span><strong style="font-weight:500;">Question</strong> — convierte los títulos en preguntas</li>
+        <li><span class="step-num">R</span><strong style="font-weight:500;">Read</strong> — lee buscando responder esas preguntas</li>
+        <li><span class="step-num">R</span><strong style="font-weight:500;">Recite</strong> — recita las respuestas sin ver el texto</li>
+        <li><span class="step-num">R</span><strong style="font-weight:500;">Review</strong> — repasa el material completo</li>
+      </ol>
+      <hr class="divider">
+      <div class="tip"><i class="ti ti-bulb" aria-hidden="true" style="font-size:14px; margin-top:1px;"></i> La fase Survey ahorra tiempo porque activa el contexto antes de leer.</div>
+    </div>
+  </div>
+
+  <!-- FEYNMAN -->
+  <div class="card">
+    <div class="card-header">
+      <div class="badge amber-badge"><i class="ti ti-message-circle" aria-hidden="true"></i> Comprensión profunda</div>
+      <p class="card-title">Técnica Feynman</p>
+      <p class="card-sub">Aprende enseñando con palabras simples</p>
+    </div>
+    <div class="card-body">
+      <div class="row"><span class="label">Ideal para</span><span class="value">Conceptos abstractos o difíciles</span></div>
+      <div class="row"><span class="label">Base</span><span class="value">Si no puedes explicarlo, no lo entendiste</span></div>
+      <hr class="divider">
+      <p style="font-size:12px; font-weight:500; color:var(--color-text-secondary); margin:0 0 7px;">Pasos</p>
+      <ol class="steps">
+        <li><span class="step-num">1</span>Estudia el concepto y toma apuntes</li>
+        <li><span class="step-num">2</span>Explícalo como si se lo enseñaras a un niño</li>
+        <li><span class="step-num">3</span>Identifica los huecos: donde te trabas, no entendiste</li>
+        <li><span class="step-num">4</span>Vuelve al material y repite hasta fluir</li>
+      </ol>
+      <hr class="divider">
+      <div class="tip"><i class="ti ti-bulb" aria-hidden="true" style="font-size:14px; margin-top:1px;"></i> Escríbelo en papel o explícaselo a alguien de verdad, no solo en tu cabeza.</div>
+    </div>
+  </div>
+
+  <!-- MAPAS MENTALES -->
+  <div class="card">
+    <div class="card-header">
+      <div class="badge teal-badge"><i class="ti ti-hierarchy" aria-hidden="true"></i> Organización visual</div>
+      <p class="card-title">Mapas mentales</p>
+      <p class="card-sub">Representación visual y ramificada del conocimiento</p>
+    </div>
+    <div class="card-body">
+      <div class="row"><span class="label">Ideal para</span><span class="value">Repasar temas, conectar ideas</span></div>
+      <div class="row"><span class="label">Materiales</span><span class="value">Papel grande o app (XMind, MindMeister)</span></div>
+      <hr class="divider">
+      <p style="font-size:12px; font-weight:500; color:var(--color-text-secondary); margin:0 0 7px;">Cómo construirlo</p>
+      <ol class="steps">
+        <li><span class="step-num">1</span>Escribe el tema central en el medio de la hoja</li>
+        <li><span class="step-num">2</span>Traza ramas principales con subtemas clave</li>
+        <li><span class="step-num">3</span>Añade ramas secundarias con detalles y ejemplos</li>
+        <li><span class="step-num">4</span>Usa colores, íconos y flechas para conectar ideas</li>
+      </ol>
+      <hr class="divider">
+      <div class="tip"><i class="ti ti-bulb" aria-hidden="true" style="font-size:14px; margin-top:1px;"></i> Usa palabras clave, no frases completas. La brevedad es la clave.</div>
+    </div>
+  </div>
+
+  <!-- FLASHCARDS -->
+  <div class="card">
+    <div class="card-header">
+      <div class="badge green-badge"><i class="ti ti-cards" aria-hidden="true"></i> Memorización</div>
+      <p class="card-title">Flashcards (tarjetas)</p>
+      <p class="card-sub">Pregunta y respuesta para memorización activa</p>
+    </div>
+    <div class="card-body">
+      <div class="row"><span class="label">Ideal para</span><span class="value">Vocabulario, fechas, fórmulas, definiciones</span></div>
+      <div class="row"><span class="label">Apps</span><span class="value">Anki, Quizlet, tarjetas físicas</span></div>
+      <hr class="divider">
+      <p style="font-size:12px; font-weight:500; color:var(--color-text-secondary); margin:0 0 7px;">Cómo usarlas</p>
+      <ol class="steps">
+        <li><span class="step-num">1</span>Escribe la pregunta/concepto en el anverso</li>
+        <li><span class="step-num">2</span>Escribe la respuesta/definición en el reverso</li>
+        <li><span class="step-num">3</span>Intenta responder sin ver el reverso</li>
+        <li><span class="step-num">4</span>Separa las que fallaste para repasar más</li>
+      </ol>
+      <hr class="divider">
+      <div class="tip"><i class="ti ti-bulb" aria-hidden="true" style="font-size:14px; margin-top:1px;"></i> Combínalas con revisión espaciada para multiplicar la retención.</div>
+    </div>
+  </div>
+
+  <!-- REVISIÓN ESPACIADA -->
+  <div class="card">
+    <div class="card-header">
+      <div class="badge pink-badge"><i class="ti ti-calendar-repeat" aria-hidden="true"></i> Retención a largo plazo</div>
+      <p class="card-title">Revisión espaciada</p>
+      <p class="card-sub">Repasa justo antes de que el cerebro olvide</p>
+    </div>
+    <div class="card-body">
+      <div class="row"><span class="label">Ideal para</span><span class="value">Cualquier contenido a largo plazo</span></div>
+      <div class="row"><span class="label">Base</span><span class="value">Curva del olvido de Ebbinghaus</span></div>
+      <hr class="divider">
+      <p style="font-size:12px; font-weight:500; color:var(--color-text-secondary); margin:0 0 7px;">Calendario de repaso</p>
+      <ol class="steps">
+        <li><span class="step-num">1</span>Estudia el material el <strong style="font-weight:500;">día 1</strong></li>
+        <li><span class="step-num">2</span>Repasa al <strong style="font-weight:500;">día 2</strong> (24 horas)</li>
+        <li><span class="step-num">3</span>Repasa al <strong style="font-weight:500;">día 7</strong> (una semana)</li>
+        <li><span class="step-num">4</span>Repasa al <strong style="font-weight:500;">día 21</strong> y luego al día 30</li>
+      </ol>
+      <hr class="divider">
+      <div class="tip"><i class="ti ti-bulb" aria-hidden="true" style="font-size:14px; margin-top:1px;"></i> Anki automatiza esto calculando cuándo repasar cada tarjeta.</div>
+    </div>
+  </div>
+
+</div>
